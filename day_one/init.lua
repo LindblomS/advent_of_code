@@ -1,5 +1,5 @@
 local function total_distance(left_list, right_list)
-    function sort_ascending(list)
+    local function sort_ascending(list)
         table.sort(list, function(a, b)
             return a < b
         end)
@@ -14,7 +14,7 @@ local function total_distance(left_list, right_list)
         total_distance = total_distance + distance
     end
 
-    print("total distance", total_distance)
+    print("total distance: ", total_distance)
     -- answer was 1651298
 end
 
@@ -30,7 +30,7 @@ local function similarity_score(left_list, right_list)
         similarity_score = similarity_score + (left_number * n)
     end
 
-    print("similarity score", similarity_score)
+    print("similarity score: ", similarity_score)
     -- answer was 21306195
 end
 
