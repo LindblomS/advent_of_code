@@ -34,7 +34,7 @@ local function similarity_score(left_list, right_list)
     -- answer was 21306195
 end
 
-local data = require("day_one.test_data")
+local data = require("test_data")
 local left_list = data.left_list
 local right_list = data.right_list
 -- local left_list = data.example_left_list

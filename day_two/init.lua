@@ -76,7 +76,7 @@ local function split_on_whitespace(line)
     return string.gmatch(line, "([^" .. "%s" .. "]+)")
 end
 
-for line in io.lines("day_two/reports.txt") do
+for line in io.lines("reports.txt") do
     local levels = {}
     for str in split_on_whitespace(line) do
         table.insert(levels, tonumber(str))
